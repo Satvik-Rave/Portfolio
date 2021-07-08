@@ -229,3 +229,20 @@ body{
         width: 100%;
     }
 }
+
+#making{
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #ffe0e0;
+    top: 90px;
+}
+@media (max-width: 768px){
+    #making{
+        top: 0px;
+        height: 100vh;
+    }
+}
