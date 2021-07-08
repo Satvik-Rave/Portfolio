@@ -221,4 +221,11 @@ body{
         font-size: small;
         margin-bottom: 25px;
     }
+    #about{
+        top: 0px;
+        height: 100vh;
+    }
+    .satvik img{
+        width: 100%;
+    }
 }
