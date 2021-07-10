@@ -125,7 +125,6 @@ body{
     height: calc(100vh - 90px);
     top: 90px;
     background: url(https://source.unsplash.com/random) top center;
-    /* background: url(https://source.unsplash.com/1536x754/?nature) top center; */
     background-size: cover;
     position: relative;
 }
@@ -198,14 +197,16 @@ body{
     }
 }
 
-#about{
+#about, #making{
     width: 100%;
-    height: calc(100vh - 90px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #a3bcf4;
+    background-image:url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 90px;
     
 }
@@ -219,7 +220,8 @@ body{
     justify-content: center;
     align-items: center;
     width: 50%;
-    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    font-size: 2.2rem;
     margin: 0 5%;
 }
 .satvik{
@@ -238,35 +240,19 @@ body{
 @media (max-width: 768px){
     .container1{
         flex-direction: column;
+        margin-top: 10%;
     }
     .info{
         text-align: center;
         font-size: 1rem;
         margin-bottom: 25px;
     }
-    #about{
+    #about, #making{
         top: 0px;
         height: 100vh;
     }
     .satvik img{
         width: 100%;
-    }
-}
-
-#making{
-    width: 100%;
-    height: calc(100vh - 90px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: #ffe0e0;
-    top: 90px;
-}
-@media (max-width: 768px){
-    #making{
-        top: 0px;
-        height: 100vh;
     }
 }
 
