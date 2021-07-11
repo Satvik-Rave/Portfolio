@@ -1,3 +1,4 @@
+/* General */
 *{
     padding: 0;
     margin: 0;
@@ -9,6 +10,7 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
+/* Navigation Bar */
 .navbar{
     display: flex;
     width: 100%;
@@ -20,20 +22,17 @@ body{
     justify-content: space-around;
     background: rgba(25, 25, 25, 0.95);
 }
-
 .navbar ul{
     align-items: center;
     justify-content: center;
     display: flex;
     list-style: none;
 }
-
 .navbar ul li{
     margin: 25px;
     align-items: center;
     justify-content: center;
 }
-
 .navbar ul li a{
     display: flex;
     text-decoration: none;
@@ -44,12 +43,12 @@ body{
     font-weight: 600;
     transition: 0.3s;
 }
-
 .navbar ul li a:hover{
     color: #cc1616;
     font-size: larger;
 }
 
+/* Logo */
 .logoname{
     display: flex;
     justify-content: center;
@@ -62,11 +61,9 @@ body{
     font-size: 30px;
     text-decoration: none;
 }
-
 .logoname h1 a:hover{
     color: #676767;
 }
-
 .checkbtn{
     color: #fff;
     font-size: 28px;
@@ -81,7 +78,8 @@ body{
 .mobile-nav-toggle.bi-x {
     color: #cc1616;
 }
-  
+ 
+/* Navigation bar responsive */
 @media (max-width: 991px) {
     .logoname{
         width: 90%;
@@ -118,6 +116,8 @@ body{
       left: 0;
     }
   }
+
+/* Hero Section */
 #hero {
     width: 100%;
     display: flex;
@@ -128,7 +128,6 @@ body{
     background-size: cover;
     position: relative;
 }
-
 .container{
     background-color: #0000007d;
     border-radius: 15px;
@@ -136,21 +135,19 @@ body{
     margin-left: 2%;
     font-family: "Raleway", sans-serif;
 }
-#hero h1 {
+#hero h1{
     margin: 0 0 10px 0;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
     text-transform: uppercase;
     color: #fff;
-  }
-  
+}
 #hero h2 {
     color: #eee;
     margin-bottom: 30px;
     font-size: 24px;
-}
-  
+} 
 #hero .btn{
     text-transform: uppercase;
     font-weight: 500;
@@ -163,18 +160,17 @@ body{
     color: #fff;
     text-decoration-line: none;
 }
-  
 #hero .btn:hover {
     background: #cc1616;
     border-color: #cc1616;
 }
-  
+
+/* Hero section responsive */
 @media (min-width: 1024px) {
     #hero {
       background-attachment: fixed;
     }
-}
-  
+} 
 @media (max-width: 768px) {
     #hero {
       text-align: center;
@@ -197,6 +193,7 @@ body{
     }
 }
 
+/* General sections */
 #about, #projects, #projects1{
     width: 100%;
     height: 100vh;
@@ -204,9 +201,10 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 90px;
-    
+    top: 90px;   
 }
+
+/* About Section */
 .container1{
     display: flex;
     justify-content: center;
@@ -231,10 +229,8 @@ body{
 .satvik img{
     width: 100%;
 }
-.satvik:hover{
-    /* width: 75%; */
-}
 
+/* About section responsive */
 @media (max-width: 1000px){
     .info{
         font-size: 1.5rem;
@@ -250,14 +246,10 @@ body{
         font-size: 1.3rem;
         margin: 0;
         width: 80%;
-        /* margin-bottom: 25px; */
     }
     #about, #projects, #projects1{
         top: 0px;
         height: 100vh;
-    }
-    .satvik:hover{
-        /* width: 65%; */
     }
     .satvik{
         margin-top: 10%;
@@ -266,7 +258,6 @@ body{
         width: 75%;
     }
 }
-
 @media (max-width: 1516px)
 {
     #hero, #about, #projects, #projects1{
@@ -275,16 +266,15 @@ body{
     }
 }
 
+/* Projects section */
 .containercard{
     position: relative;
     display: flex;
-    /* width: 1100px; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     font-family: 'Bree Serif', serif;
 }
-
 .card{
     position: relative;
     max-width: 360px;
@@ -298,11 +288,9 @@ body{
     box-shadow: 0 5px 202px rgb(0 0 0 / 50%);
     transition: 0.3s ease-in-out;
 }
-
 .card:hover{
     height: 420px;
 }
-
 .image{
     position: relative;
     width: 260px;
@@ -310,12 +298,10 @@ body{
     top: -60px;
     box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
 }
-
 .image img{
     max-width: 100%;
     border-radius: 4px;
 }
-
 .infocard{
     position: relative;
     margin-top: -140px;
@@ -326,7 +312,6 @@ body{
     opacity: 0;
     transition: 0.3s ease-in-out;   
 }
-
 .card:hover .infocard{
     visibility: visible;
     opacity: 1;
@@ -334,6 +319,7 @@ body{
     transition-delay: 0.3s;
 }
 
+/* Projects section responsive */
 @media (max-width: 768px){
     #projects, #projects1{
         flex-direction: column;
