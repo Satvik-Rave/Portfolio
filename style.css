@@ -197,16 +197,13 @@ body{
     }
 }
 
-#about, #making{
+#about, #projects, #projects1{
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-image:url("bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     top: 90px;
     
 }
@@ -223,13 +220,19 @@ body{
     font-family: 'Lobster', cursive;
     font-size: 2.2rem;
     margin: 0 5%;
+    color: white;
 }
 .satvik{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
     margin: 0 5%;
+}
+.satvik img{
+    width: 100%;
+}
+.satvik:hover{
+    /* width: 75%; */
 }
 
 @media (max-width: 1000px){
@@ -244,22 +247,108 @@ body{
     }
     .info{
         text-align: center;
-        font-size: 1rem;
-        margin-bottom: 25px;
+        font-size: 1.3rem;
+        margin: 0;
+        width: 80%;
+        /* margin-bottom: 25px; */
     }
-    #about, #making{
+    #about, #projects, #projects1{
         top: 0px;
         height: 100vh;
     }
+    .satvik:hover{
+        /* width: 65%; */
+    }
+    .satvik{
+        margin-top: 10%;
+    }
     .satvik img{
-        width: 100%;
+        width: 75%;
     }
 }
 
 @media (max-width: 1516px)
 {
-    #hero, #about, #making{
+    #hero, #about, #projects, #projects1{
         top: 0px;
         height: 100vh;
+    }
+}
+
+.containercard{
+    position: relative;
+    display: flex;
+    /* width: 1100px; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Bree Serif', serif;
+}
+
+.card{
+    position: relative;
+    max-width: 360px;
+    height: 215px;
+    background-color: white;
+    margin: 30px 10px;
+    align-items: center;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgb(0 0 0 / 50%);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+    height: 420px;
+}
+
+.image{
+    position: relative;
+    width: 260px;
+    height: 175px;
+    top: -60px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+}
+
+.image img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.infocard{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;   
+}
+
+.card:hover .infocard{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 768px){
+    #projects, #projects1{
+        flex-direction: column;
+        height: auto;
+    }
+    .containercard{
+        height: 100vh;
+        top: 25%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .card{
+        margin: 0;
+        padding: 0;
+        top: 10%;
     }
 }
