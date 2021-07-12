@@ -227,7 +227,15 @@ body{
     margin: 0 5%;
 }
 .satvik img{
-    width: 100%;
+    width: 70%;
+}
+.satvik img:hover{
+    box-shadow: 0px 0px 20px 6px #99a4ff;
+    transition: 2s;
+}
+.satvik a{
+    display: flex;
+    justify-content: center;
 }
 
 /* About section responsive */
