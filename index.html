@@ -43,7 +43,7 @@
         </div>
     </section>
 
-    <section id="about" style="background-color: #242424;">
+    <section id="about" style="background-color: #242424; justify-content: center;" >
         <div class="container1">
             <div class=info>
                 Hey, I am Satvik Jain. 2nd Year CSE Core student at VIT Vellore. This is a purely HTML and CSS based
@@ -58,62 +58,79 @@
         </div>
     </section>
 
-    <section id="projects" style="background-color: #000000c4;">
+    <section id="projects" style="background-color: #000000c4; justify-content: center;">
         <div class="containercard">
             <div class="card">
-                <div class="image">     
-                        <img src="1.jpg" alt="card1">
+                <div class="image">
+                    <img src="satvik.jpg" alt="PHOTO">
                 </div>
-                <div class="infocard">
-                    <h2>CARD 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis ullam asperiores. Debitis
-                        pariatur molestias, tempore fugiat nobis eos dolorum necessitatibus quibusdam vel suscipit,
-                        assumenda optio aperiam reprehenderit, soluta totam ipsam autem sit itaque.</p>
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Card One</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. </p>
+                    <a href="#">Read More</a>
                 </div>
             </div>
         </div>
         <div class="containercard">
             <div class="card">
                 <div class="image">
-                    <img src="2.jpg" alt="card2">
+                    <img src="satvik.jpg" alt="PHOTO">
                 </div>
-                <div class="infocard">
-                    <h2>CARD 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis ullam asperiores. Debitis
-                        pariatur molestias, tempore fugiat nobis eos dolorum necessitatibus quibusdam vel suscipit,
-                        assumenda optio aperiam reprehenderit, soluta totam ipsam autem sit itaque.</p>
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Card two</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. </p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>    
+        </div>
+        <div class="containercard">
+            <div class="card">
+                <div class="image">
+                    <img src="satvik.jpg" alt="PHOTO">
+                </div>
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Card three</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. </p>
+                    <a href="#">Read More</a>
                 </div>
             </div>
         </div>
+        <!-- <div class="containercard">
+            <div class="card">
+                <div class="image">
+                    <img src="satvik.jpg" alt="PHOTO">
+                </div>
+                <div class="content">
+                    <h2>04</h2>
+                    <h3>Card Four</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div> -->
     </section>
-    <section id="projects1" style="background-color: #242424;">
-        <div class="containercard">
-            <div class="card">
-                <div class="image">
-                    <img src="3.jpg" alt="card3">
-                </div>
-                <div class="infocard">
-                    <h2>CARD 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis ullam asperiores.Debitis
-                        pariatur molestias, tempore fugiat nobis eos dolorum necessitatibus quibusdam vel suscipit,
-                        assumenda optio aperiam reprehenderit, soluta totam ipsam autem sit itaque.</p>
-                </div>
-            </div>
-        </div>
-        <div class="containercard">
-            <div class="card">
-                <div class="image">
-                    <img src="4.jpg" alt="card4">
-                </div>
-                <div class="infocard">
-                    <h2>CARD 4</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis ullam asperiores.Debitis
-                        pariatur molestias, tempore fugiat nobis eos dolorum necessitatibus quibusdam vel suscipit,
-                        assumenda optio aperiam reprehenderit, soluta totam ipsam autem sit itaque.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <script type="text/javascript" src="vanilla-tilt.js">
+    </script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),
+            {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+    </script>
 </body>
 
 </html>
