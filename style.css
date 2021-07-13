@@ -392,14 +392,14 @@ body{
         height: auto;
     }
     #projects .heading{
-        padding-top: 20%;
+        padding-top: 25%;
     }
     .cards{
         flex-direction: column;
     }
     .containercard, .containercard1{
         margin-top: 40%;
-        margin-bottom: 40%;
+        margin-bottom: 45%;
         padding: 0;
         flex-direction: column;
     }
