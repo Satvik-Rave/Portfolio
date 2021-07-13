@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css">
     <title>Satvik's Web</title>
 </head>
@@ -44,6 +49,9 @@
     </section>
 
     <section id="about" style="background-color: #242424; justify-content: center;" >
+        <div class="heading" style="font-family: 'Merriweather', serif;">
+            <h1>ABOUT</h1>
+        </div>
         <div class="container1">
             <div class=info>
                 Hey, I am Satvik Jain. 2nd Year CSE Core student at VIT Vellore. This is a purely HTML and CSS based
@@ -59,48 +67,53 @@
     </section>
 
     <section id="projects" style="background-color: #000000c4; justify-content: center;">
-        <div class="containercard">
-            <div class="card">
-                <div class="image">
-                    <img src="satvik.jpg" alt="PHOTO">
-                </div>
-                <div class="content">
-                    <h2>01</h2>
-                    <h3>Card One</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. </p>
-                    <a href="#">Read More</a>
+        <div class="heading">
+            <h1>PROJECTS</h1>
+        </div>
+        <div class="cards" style="display: flex;">
+            <div class="containercard">
+                <div class="card">
+                    <div class="image">
+                        <img src="satvik.jpg" alt="PHOTO">
+                    </div>
+                    <div class="content">
+                        <h2>01</h2>
+                        <h3>Card One</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. </p>
+                        <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="containercard">
-            <div class="card">
-                <div class="image">
-                    <img src="satvik.jpg" alt="PHOTO">
-                </div>
-                <div class="content">
-                    <h2>02</h2>
-                    <h3>Card two</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. </p>
+            <div class="containercard1" style="margin-top: 15%;">
+                <div class="card">
+                    <div class="image">
+                        <img src="satvik.jpg" alt="PHOTO">
+                    </div>
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>Card two</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. </p>
+                            <a href="#">Read More</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="containercard">
+                <div class="card">
+                    <div class="image">
+                        <img src="satvik.jpg" alt="PHOTO">
+                    </div>
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3>Card three</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. </p>
                         <a href="#">Read More</a>
-                </div>
-            </div>    
-        </div>
-        <div class="containercard">
-            <div class="card">
-                <div class="image">
-                    <img src="satvik.jpg" alt="PHOTO">
-                </div>
-                <div class="content">
-                    <h2>03</h2>
-                    <h3>Card three</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. </p>
-                    <a href="#">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,6 +133,7 @@
             </div>
         </div> -->
     </section>
+
     <script type="text/javascript" src="vanilla-tilt.js">
     </script>
     <script>
@@ -132,5 +146,4 @@
             });
     </script>
 </body>
-
 </html>

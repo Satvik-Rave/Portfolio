@@ -27,6 +27,7 @@ body{
     justify-content: center;
     display: flex;
     list-style: none;
+    font-family: 'Merriweather', serif;
 }
 .navbar ul li{
     margin: 25px;
@@ -94,7 +95,7 @@ body{
       width: 100%;
       flex-direction: column;
       height: 65vh;
-      background-color: cornflowerblue;
+      background-color: #6495eded;
       top: 80px;
       left: -100%;
       text-align: center;
@@ -199,6 +200,7 @@ body{
     height: 100vh;
     display: flex;
     /* justify-content: center; */
+    flex-direction: column;
     align-items: center;
     position: relative;
     top: 90px;  
@@ -212,6 +214,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+.heading{
+    width: 100%;
+}
+.heading h1{
+    font-size: 2.5rem;
+    text-shadow: -4px -4px 1px black;
+    color: #d6f5ff;
+    display: inline;
+    margin-left: 5%;
+}
 .info{
     display: flex;
     justify-content: center;
@@ -219,6 +231,7 @@ body{
     width: 50%;
     font-family: 'Lobster', cursive;
     font-size: 2.2rem;
+    word-spacing: 2px;
     margin: 0 5%;
     color: white;
 }
@@ -244,12 +257,19 @@ body{
 @media (max-width: 1000px){
     .info{
         font-size: 1.5rem;
+        padding-top: 25px;
     }
 }
 @media (max-width: 768px){
+    .heading{
+        padding-top: 15%;
+    }
+    .heading h1{
+        font-size: 1.5rem;
+        margin-left: 10%;
+    }
     .container1{
         flex-direction: column;
-        margin-top: 10%;
     }
     .info{
         text-align: center;
@@ -277,8 +297,12 @@ body{
 }
 
 /* Projects section */
-.containercard{
+#projects .heading{
+    padding-top: 5%;
+}
+.containercard, .containercard1{
     position: relative;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,10 +310,10 @@ body{
     flex-wrap: wrap;
     z-index: 1;
 }
-.containercard .card{
+.card{
     position: relative;
-    width: 280px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -297,8 +321,6 @@ body{
     overflow: hidden;
     display: block;
     padding: 15px;
-    /* justify-content: center;
-    align-items: center; */
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
@@ -323,11 +345,11 @@ body{
     transition: 0.8s;
 }
 
-.containercard .card:hover .content{
+.card:hover .content{
     transform: translateY(-250px);
     opacity: 1;
 }
-.containercard .card:hover .image{
+.card:hover .image{
     opacity: 0;
     transition: 1.2s;
 }
@@ -369,10 +391,15 @@ body{
         flex-direction: column;
         height: auto;
     }
-    .containercard{
-        height: 100vh;
-        top: 25%;
-        margin: 0;
+    #projects .heading{
+        padding-top: 20%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .containercard, .containercard1{
+        margin-top: 40%;
+        margin-bottom: 40%;
         padding: 0;
         flex-direction: column;
     }
