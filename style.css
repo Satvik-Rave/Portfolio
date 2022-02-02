@@ -408,10 +408,10 @@ body{
         margin: 0;
         padding: 0;
         top: 10%;
-        height: 325px;
+        height: 340px;
     }
     .card:hover .content{
-        transform: translateY(-270px);
+        transform: translateY(-285px);
     }
     .up,.down{
         flex-direction: column;
