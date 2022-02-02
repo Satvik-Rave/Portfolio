@@ -314,7 +314,7 @@ body{
 .card{
     position: relative;
     width: 200px;
-    height: 275px;
+    height: 300px;
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -347,7 +347,7 @@ body{
 }
 
 .card:hover .content{
-    transform: translateY(-250px);
+    transform: translateY(-270px);
     opacity: 1;
 }
 .card:hover .image{
@@ -408,6 +408,9 @@ body{
         margin: 0;
         padding: 0;
         top: 10%;
+    }
+    .up,.down{
+        flex-direction: column;
     }
 }
 /* @media (max-width: 1450px){
